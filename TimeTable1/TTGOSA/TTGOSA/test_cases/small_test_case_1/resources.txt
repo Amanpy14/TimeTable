@@ -1,0 +1,22 @@
+20
+1 section sec-A
+2 section sec-A1
+3 section sec-A2
+4 section sec-A3
+5 fac VKM
+6 fac RKD
+7 fac PKR
+8 fac VB
+9 fac SVA
+10 fac AS
+11 fac PB
+12 fac PAG
+13 fac SG
+14 room B301
+15 room B311
+16 room B312
+17 room B313
+18 lab1 B101
+19 lab2 B102
+20 lab3 B103
+

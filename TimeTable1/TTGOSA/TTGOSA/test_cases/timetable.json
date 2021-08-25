@@ -1,0 +1,59 @@
+{
+  "days": 6,
+  "slotsPerDay": 8,
+  "resources": [
+    { "id": 1 },
+    { "id": 2 },
+    { "id": 3 }
+  ],
+  "resourceGroups": [
+    {
+      "id": 1,
+      "resourceIds": [ 1, 2 ]
+    },
+    {
+      "id": 2,
+      "resourceIds": [ 3 ]
+    }
+  ],
+  "conflictingResources": [
+      [ 1, 2 ],
+      [ 1, 3 ]
+  ],
+  "events": [
+    {
+      "id": 1,
+      "requiredTimeSlots": 2,
+      "preassignedResourceIds": [ 1, 2, 3 ],
+      "unassignedResourceGroupIds": [ 1 ]
+    },
+    {
+      "id": 2,
+      "requiredTimeSlots": 1,
+      "preassignedResourceIds": [ 1, 2, 3 ],
+      "unassignedResourceGroupIds": [ 1 ]
+    }
+  ],
+  "noResourceAvailable": [
+    {
+      "days": [ 1, 2, 3, 4, 5, 6 ],
+      "timeSlots": [ 5, 6 ]
+    },
+    {
+      "days": [ 3, 6 ],
+      "timeSlots": [ 8 ]
+    }
+  ],
+  "resourceBusy": [
+    {
+      "resourceId": 1,
+      "days": [ 1, 6 ],
+      "timeSlots": [ 5, 6 ]
+    },
+    {
+      "resourceId": 2,
+      "days": [ 3, 6 ],
+      "timeSlots": [ 8 ]
+    }
+  ]
+}
